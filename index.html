@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Game</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="game-intro container d-flex flex-column justify-content-center align-items-center rounded-2 border w-25 bg-primary border-primary" style="margin-top: 15rem;">
+        <div class="p-2 text-light">
+          <h1>Card game</h1>
+        </div>
+        <div class="text-light">
+          <label for="player-name">Your name</label>
+          <input type="text" id="player-name">
+        </div>
+        <div class="p-2 text-light">
+          <label for="computers">Number of computers</label>
+          <input type="number" id="computers" min="1" max="17">
+        </div>
+        <div class="p-2">
+          <button class="start-game btn btn-light text-dark">Start game</button>
+        </div>
+    </div>
+    <div class="game-layout container d-none flex-column justify-content-center p-0" style="margin-top: 2rem;">
+        <div class="row">
+            <div class="col text-center">
+                <button class="play-button btn btn-primary text-white px-5 py-3">Play</button>
+
+                <button class="reset-button btn btn-warning text-dark px-5 py-3">Reset</button>
+            </div>
+        </div>
+        <div class="player-row row mt-4 d-flex justify-content-between m-0" style="height: 6rem;">
+          <div class="row col-2 border border-light p-2 m-0" style="background-color: green;">
+            <div class="col-2 p-0 float-start">
+              <div class="flip-card" style="width: 33%;">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img style="height: 5rem;" src="./assets/img/back-card.jpg" alt="BackCard">
+                    </div>
+                    <div class="flip-card-back">
+                      <img src="" alt="">
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-2 p-0 mx-auto">
+                <div class="flip-card" style="width: 33%;">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img style="height: 5rem;" src="./assets/img/back-card.jpg" alt="BackCard">
+                      </div>
+                      <div class="flip-card-back">
+                        
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-2 p-0 float-end">
+                <div class="flip-card" style="width: 33%;">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img style="height: 5rem;" src="./assets/img/back-card.jpg" alt="BackCard">
+                      </div>
+                      <div class="flip-card-back">
+                        
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-1">
+              
+            </div>
+          </div>
+        </div>
+        <div class="name-row row mt-2 d-flex justify-content-between m-0">
+          <div class="col-2 text-center">
+            <h5 class="player-name"></h5>
+        </div>
+        </div>
+        <div class="player-row row mt-2 d-flex justify-content-between m-0" style="height: 6rem;">
+        </div>
+        <div class="name-row row mt-2 d-flex justify-content-between m-0">
+        </div>
+        <div class="player-row row mt-2 d-flex justify-content-between m-0" style="height: 6rem;">
+        </div>
+        <div class="name-row row mt-2 d-flex justify-content-between m-0">
+        </div>
+        <div class="player-row row mt-2 d-flex justify-content-end m-0" style="height: 6rem;">
+        </div>
+        <div class="name-row row mt-2 d-flex justify-content-end m-0">
+        </div>
+        <div class="rounded row d-flex flex-wrap position-fixed bg-warning border border-3 border-danger" style="bottom: 2rem; left: 10%; width: 45rem; height: 10rem;">
+          <ol class="ms-4 table-points">
+          </ol> 
+        </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./script.js"></script>r
+</body>
+</html>
